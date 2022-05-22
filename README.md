@@ -1,5 +1,5 @@
-# Java-Cafeteria
-The project is based on the University cafeteria. 
+# Java Cafeteria
+This project is based on the University cafeteria. 
 
 ## Project Outline
 
