@@ -397,7 +397,7 @@ public class cafe {
     void customer() {
         int choice = 0;
         do {
-            System.out.println("\n************* MENU *************");
+            System.out.println("\n************* MENU ***************");
             System.out.println("1.Add An Item to Cart");
             System.out.println("2.Delete An Item from Cart");
             System.out.println("3.Display All Items in Cart");
@@ -459,7 +459,7 @@ public class cafe {
         }
         int choice = 0;
         do {
-            System.out.println("********** MENU **********");
+            System.out.println("********** MENU ************");
             System.out.println("1. Administration ");
             System.out.println("2. Customer ");
             System.out.println("3. Exit ");
