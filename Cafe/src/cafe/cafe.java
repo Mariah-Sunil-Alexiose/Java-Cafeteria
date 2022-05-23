@@ -181,22 +181,27 @@ public class cafe {
     // Function that searches whether the user entered string exists in the shop
     void search_item() {
         String find;
+        int found = 0;
         Scanner scanstr = new Scanner(System.in);
         if (check_shop() == 0) {
             System.out.println("Search For An Item : ");
             find = scanstr.nextLine();
             for (int i = 0; i < mealcounter; i++) {
                 if (meals[i].name.toLowerCase().contains(find.toLowerCase())) {
+                    found = 1;
                     meals[i].Display();
                     System.out.println("\n");
                 }
             }
             for (int i = 0; i < drinkcounter; i++) {
                 if (drinks[i].name.toLowerCase().contains(find.toLowerCase())) {
+                    found = 1;
                     drinks[i].Display();
                     System.out.println("\n");
                 }
             }
+            if(found == 0)
+                System.out.println("Sorry! We cannot find anything that matchs with any items in the shop!");
         }
     }
 
