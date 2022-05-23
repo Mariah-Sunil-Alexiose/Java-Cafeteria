@@ -74,7 +74,7 @@ public class cafe {
     // Function that checks if the cafe is empty
     int check_shop() {
         if (mealcounter == 0 && drinkcounter == 0) {
-            System.out.println("Empty cafe!");
+            System.out.println("Empty cafeteria!");
             return 1;
         } else
             return 0;
