@@ -5,7 +5,7 @@ import edible.drink;
 import java.util.Scanner;
 
 public class cafe {
-    // Total number of items in the shop
+    // Total number of items in the cafe
     public static int n = 50;
     // Create objects of the classes
     meal[] meals = new meal[n];
@@ -18,7 +18,7 @@ public class cafe {
     public int drinkcounter = 0, mealcounter = 0, cartcounter = 0, drinkcartCounter = 0, mealcartCounter;
 
     // Check if the number of items entered by the user exceeds the number of items
-    // present in the shop
+    // present in the cafe
     void check_quantity(int q, int q1) {
         while (q > q1) {
             System.out.println("Sorry! We only have " + q1 + "!");
@@ -26,7 +26,7 @@ public class cafe {
         }
     }
 
-    // Function that adds items into the shop
+    // Function that adds items into the cafe
     void add_item() {
         int ch;
         System.out.println("Press 1 for meal or 0 for drink: ");
@@ -45,7 +45,7 @@ public class cafe {
         }
     }
 
-    // Function that displays meals in the shop
+    // Function that displays meals in the cafe
     void display_meals() {
         if (mealcounter > 0) {
             System.out.println("MEALS");
@@ -55,10 +55,10 @@ public class cafe {
                 System.out.println("\n");
             }
         } else
-            System.out.println("No meals in shop!");
+            System.out.println("No meals in cafeteria!");
     }
 
-    /// Function that displays drinks in the shop
+    /// Function that displays drinks in the cafe
     void display_drinks() {
         if (drinkcounter > 0) {
             System.out.println("DRINKS");
@@ -68,19 +68,19 @@ public class cafe {
                 System.out.println("\n");
             }
         } else
-            System.out.println("No drinks in shop!");
+            System.out.println("No drinks in cafeteria!");
     }
 
-    // Function that checks if the shop is empty
+    // Function that checks if the cafe is empty
     int check_shop() {
         if (mealcounter == 0 && drinkcounter == 0) {
-            System.out.println("Empty shop!");
+            System.out.println("Empty cafe!");
             return 1;
         } else
             return 0;
     }
 
-    // Function that checks whether the Item ID exists in the shop
+    // Function that checks whether the Item ID exists in the cafe
     int check_id(int id, int counter) {
         int found = 0;
         for (int i = 0; i < counter; i++) {
@@ -96,7 +96,7 @@ public class cafe {
             return 0;
     }
 
-    // Function that deletes items in the shop
+    // Function that deletes items in the cafe
     void delete_item() {
         int d, ch;
         if (check_shop() == 0) {
@@ -131,7 +131,7 @@ public class cafe {
         }
     }
 
-    // Function that updates items in the shop
+    // Function that updates items in the cafe
     void update_item() {
         int ch, u;
         if (check_shop() == 0) {
@@ -166,7 +166,7 @@ public class cafe {
         }
     }
 
-    // Function that displays all the items in the shop
+    // Function that displays all the items in the cafe
     void display_items() {
         if (check_shop() == 0) {
             if (mealcounter > 0) {
@@ -178,7 +178,7 @@ public class cafe {
         }
     }
 
-    // Function that searches whether the user entered string exists in the shop
+    // Function that searches whether the user entered string exists in the cafe
     void search_item() {
         String find;
         int found = 0;
@@ -201,7 +201,7 @@ public class cafe {
                 }
             }
             if(found == 0)
-                System.out.println("Sorry! We cannot find anything that matchs with any items in the shop!");
+                System.out.println("Sorry! We cannot find anything that matchs with any items in the cafe!");
         }
     }
 
