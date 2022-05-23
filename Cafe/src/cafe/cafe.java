@@ -209,14 +209,14 @@ public class cafe {
     void admin() {
         int choice = 0;
         do {
-            System.out.println("\n********** MENU **********");
+            System.out.println("\n********** ADMIN MENU **********");
             System.out.println("1.Add An Item");
             System.out.println("2.Delete An Item");
             System.out.println("3.Update An Item");
             System.out.println("4.Display All Items");
             System.out.println("5.Display Item By Name");
             System.out.println("6.Exit");
-            System.out.println("****************************");
+            System.out.println("**********************************");
             System.out.println("Enter your choice: ");
             choice = scan.nextInt();
             switch (choice) {
@@ -402,13 +402,13 @@ public class cafe {
     void customer() {
         int choice = 0;
         do {
-            System.out.println("\n************* MENU ***************");
+            System.out.println("\n************* CUSTOMER MENU ***************");
             System.out.println("1.Add An Item to Cart");
             System.out.println("2.Delete An Item from Cart");
             System.out.println("3.Display All Items in Cart");
             System.out.println("4.Print Bill");
             System.out.println("5.Exit");
-            System.out.println("************************************");
+            System.out.println("*********************************************");
             System.out.println("Enter your choice: ");
             choice = scan.nextInt();
             switch (choice) {
